@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:webhoseio.xcodeproj">
+      location = "self:/Users/shaun/Documents/Work/ran_geva/webhoseio/WebhoseKit.xcodeproj">
    </FileRef>
 </Workspace>
