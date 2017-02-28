@@ -98,7 +98,7 @@ endpoints:
 
 Now you can make a request and inspect the results in a block:
 
-```
+```swift
 var query = ["q": "github"]
 WebhoseKit.query(endpoint: "filterWebData", query: &query) { error, json do
     if (error == nil) {
