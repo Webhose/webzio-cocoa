@@ -1,6 +1,6 @@
 //
 //  Copyright (C) 2017 Webhose.IO
-//  Ported from Python on request by Shaun Wheelhouse <shaun@sigio.is>
+//  Ported from the Python by Ran Geva
 //
 //  WebhoseKit
 //
@@ -8,61 +8,127 @@
 
 import Foundation
 
-let API_SCHEME = "http"
-let API_FQDN   = "webhose.io"
-let API_PREFIX = ""
+// Make this public if you ever want to allow consumers to instantiate this class themselves.
 
-class Session {
+let URL_ROOT = "http://webhose.io"
+
+struct APIError: Error {
+    enum ErrorKind {
+        case invalidStatusCode
+    }
     
-    init(token: String = nil) {
+    let statusCode: Int
+    let type: ErrorKind
+}
+
+private class Session {
+    
+    var token: String?
+    
+    var nextCall: URL?
+    
+    init(token: String? = nil) {
         self.token = token
-        self.nextCall = []
+        self.nextCall = nil
     }
     
-    private func formatURL(path: String, query: Dictionary = nil) -> String {
-        return URL(string: API_SCHEME + "://" + API_FQDN + API_PREFIX + path)
+    private func formatURL(endpoint: String, query: [String: String]) -> URL {
+        var urlComponents = URLComponents(string: URL_ROOT)!
+        urlComponents.queryItems = packQuery(query: query)
+        urlComponents.path = "/" + endpoint
+        return urlComponents.url!
     }
     
-    func getNext() {
-        return self.query(self.nextCall[0])
+    // Process the next pending API call if there is one. Returns true if a call was processed
+    // and false otherwise.
+    
+    func getNext(completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Bool {
+        if (nextCall != nil) {
+            self.queryURL(url: nextCall!, completionHandler: completionHandler)
+            return true
+        } else {
+            return false
+        }
     }
     
-    func query(endpoint: String, parameters: Dictionary = nil) -> Dictionary {
+    // Pack a query dictionary to a list of URLQueryItems.
+    
+    private func packQuery(query: [String: String]) -> [URLQueryItem] {
+        var urlQueryItems = [URLQueryItem]()
+        for (name, value) in query {
+            urlQueryItems.append(URLQueryItem(name: name, value: value))
+        }
+        return urlQueryItems
+    }
+    
+    // Parse the response["next"] JSON parameter to produce a maybe URL.
+    
+    private func parseNext(path: String) -> URL? {
+        return URL(string: URL_ROOT + path)
+    }
+    
+    // Query an API endpoint using a query dictionary.
+    
+    func query(endpoint: String, query: inout [String: String],
+               completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Void {
         
-        if (parameters != nil) {
-            parameters["format"] = "json"
-            if (self.token != nil) {
-                parameters["token"] = self.token
+        query["format"] = "json"
+        if (token != nil) {
+            query["token"] = token
+        }
+        queryURL(url: formatURL(endpoint: endpoint, query: query), completionHandler: completionHandler)
+    }
+    
+    // Query an API endpoint using a complete URL with query parameters.
+    
+    private func queryURL(url: URL,
+                          completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Void {
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            
+            var handlerError: Error? = error
+            var json: [String: Any]? = nil
+            
+            if (error == nil) {
+                
+                let statusCode = (response! as! HTTPURLResponse).statusCode
+                
+                if (statusCode == 200) {
+            
+                    json = ((try? JSONSerialization.jsonObject(with: data!)) as! [String: Any]?)
+            
+                    if (json != nil) {
+                        let nextCallPath = json!["next"] as! String?
+                        if (nextCallPath != nil) {
+                            self.nextCall = self.parseNext(path: nextCallPath!)
+                        }
+                    }
+                
+                } else {
+                    
+                    handlerError = APIError(statusCode: statusCode, type: .invalidStatusCode)
+                }
             }
+            
+            completionHandler(handlerError, json)
         }
-        
-        let url = formatURL("/" + endpoint, parameters)
-        
-        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
-            let json = try! JSONSerialization.jsonObject(with: data)
-        }
-        
-        // TODO: Ensure that this task is performed synchronously. If that would be
-        //       too expensive then add a callback argument for an anonymous
-        //       function signature.
-        
-        // TODO: Investigate Swift error handling and raise an appropriate error
-        //       if the HTTP operation or JSON parse fails.
-        
-        // TODO: Add subsequent calls from the JSON results to the nextCall stack.
         
         task.resume()
-        
-        return nil
     }
 }
+
+// Session singleton for module-level functions.
 
 private let session = Session()
 
-func query(endpoint: String, parameters: Dictionary = nil) -> Dictionary {
-    return session.query(endpoint, parameters)
+public func config(token: String) -> Void {
+    session.token = token
 }
 
-func getNext() {
-    return session.getNext()
+public func getNext(completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Bool {
+    return session.getNext(completionHandler: completionHandler)
+}
+
+public func query(endpoint: String, query: inout [String: String],
+           completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Void {
+    return session.query(endpoint: endpoint, query: &query, completionHandler: completionHandler)
 }
