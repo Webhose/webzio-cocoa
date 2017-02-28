@@ -3,7 +3,7 @@
 
 A simple way to access the Webhose.io API with Swift on macOS, iOS, tvOS, and watchOS.
 
-```
+```swift
 import WebhoseKit
 
 let API_TOKEN = "VVVVVVVV-WWWW-XXXX-YYYY-ZZZZZZZZZZZZ"
@@ -41,7 +41,7 @@ and then go into https://webhose.io/dashboard to see your token.
 
 1. Add this repository as a submodule of your application's repository.
 
-   ```
+   ```bash
    $ cd YourApplication/
    $ git submodule add https://github.com/Webhose/webhoseio-cocoa.git WebhoseKit
 
@@ -80,7 +80,7 @@ forget that you can reset your key from the Webhose.IO control panel if you ever
 To get started, you need to import the framework and set your access token (Replace
 YOUR_API_KEY with your actual API key).
 
-```
+```swift
 import WebhoseKit
 
 WebhoseKit.config(token: YOUR_API_KEY)
@@ -137,7 +137,7 @@ WebhoseKit.query(endpoint: "filterWebData", query: &query) { error, json do
 If you want to make repeated searches, performing an action whenever there are new
 results, poll the WebhoseKit.next_post() function until it returns false:
 
-```
+```swift
 while (WebhoseKit.next_post() { error, json do
     if (error == nil) {
         debugPrint(json)
