@@ -41,13 +41,23 @@ and then go into https://webhose.io/dashboard to see your token.
 
 1. Add this repository as a submodule of your application's repository.
 
-2. Drag and drop WebhoseKit.xcodeproj into your application's Xcode project or workspace.
+   ```
+   $ cd YourApplication/
+   $ git submodule add https://github.com/Webhose/webhoseio-cocoa.git WebhoseKit
 
-3. On the "General" tab of your application target's settings add WebhoseKit.framework to
+   ```
+
+2. Make sure your submodules are initialized by running `git submodule --init --recursive`.
+
+3. Drag and drop WebhoseKit.xcodeproj into your application's Xcode project or workspace.
+
+4. On the "General" tab of your application target's settings add WebhoseKit.framework to
    the "Embedded Binaries" section.
 
-4. If your application's target does not contain any Swift you should also set the
+5. If your application's target does not contain any Swift you should also set the
    EMBEDDED_CONTENT_CONTAINS_SWIFT build settings to "Yes".
+
+6. Start using WebhoseKit!
 
 ## Testing
 
