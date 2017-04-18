@@ -12,7 +12,7 @@ func main() {
     var query = ["q": "github"]
 
     WebhoseKit.config(token: API_TOKEN)
-    WebhoseKit.query(endpoint: "filterWebData", query: &query) { error, json do
+    WebhoseKit.query(endpoint: "filterWebContent", query: &query) { error, json do
         if (error == nil) {
             let posts = json!["posts"] as! [[String: Any]]
             
@@ -92,15 +92,15 @@ WebhoseKit.config(token: YOUR_API_KEY)
 The first parameter the query() function accepts is the API endpoint string. Available
 endpoints:
 
-* filterWebData - access to the news/blogs/forums/reviews API
-* productSearch - access to data about eCommerce products/services
-* darkWebAPI    - access to the dark web (coming soon)
+* filterWebContent - access to the news/blogs/forums/reviews API
+* productFilter - access to data about eCommerce products/services
+* darkFilter    - access to the dark web (coming soon)
 
 Now you can make a request and inspect the results in a block:
 
 ```swift
 var query = ["q": "github"]
-WebhoseKit.query(endpoint: "filterWebData", query: &query) { error, json do
+WebhoseKit.query(endpoint: "filterWebContent", query: &query) { error, json do
     if (error == nil) {
         debugPrint(json)
     }
@@ -118,9 +118,9 @@ WebhoseKit.query(endpoint: "filterWebData", query: &query) { error, json do
        completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Void`
 
     * endpoint:
-        * filterWebData - access to the news/blogs/forums/reviews API
-        * productSearch - access to data about eCommerce products/services
-        * darkWebAPI - access to the dark web (coming soon)
+        * filterWebContent - access to the news/blogs/forums/reviews API
+        * productFilter - access to data about eCommerce products/services
+        * darkFilter - access to the dark web (coming soon)
 
     * query: A Dictionary of API query parameters. The most common key is the "q" parameter
              that holds the filters Boolean query.
