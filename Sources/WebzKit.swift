@@ -1,16 +1,16 @@
 //
-//  Copyright (C) 2017 Webhose.IO
+//  Copyright (C) 2017 Webz.IO
 //  Ported from the Python by Ran Geva
 //
-//  WebhoseKit
+//  WebzKit
 //
-//  API tools for webhose.io.
+//  API tools for webz.io.
 
 import Foundation
 
 // Make this public if you ever want to allow consumers to instantiate this class themselves.
 
-let URL_ROOT = "http://webhose.io"
+let URL_ROOT = "https://api.webz.io"
 
 struct APIError: Error {
     enum ErrorKind {
