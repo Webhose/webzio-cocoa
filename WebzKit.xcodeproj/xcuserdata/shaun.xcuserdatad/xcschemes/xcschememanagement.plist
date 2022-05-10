@@ -4,27 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WebhoseKit Tests.xcscheme</key>
+		<key>WebzKit Tests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>WebhoseKit iOS.xcscheme_^#shared#^_</key>
+		<key>WebzKit iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>WebhoseKit macOS.xcscheme_^#shared#^_</key>
+		<key>WebzKit macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>WebhoseKit tvOS.xcscheme_^#shared#^_</key>
+		<key>WebzKit tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>WebhoseKit watchOS.xcscheme_^#shared#^_</key>
+		<key>WebzKit watchOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>

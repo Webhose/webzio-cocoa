@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		289390911E64855D00AF1732 /* WebhoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebhoseKit.swift */; };
-		289390921E64855E00AF1732 /* WebhoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebhoseKit.swift */; };
-		289390931E64855E00AF1732 /* WebhoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebhoseKit.swift */; };
-		289390941E64855F00AF1732 /* WebhoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebhoseKit.swift */; };
-		28CA0EC51E65094500B6EA3F /* WebhoseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA0EC41E65094500B6EA3F /* WebhoseKitTests.swift */; };
-		28CA0EC71E65094500B6EA3F /* WebhoseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C5E29D1E643B2400ADE6AE /* WebhoseKit.framework */; };
+		289390911E64855D00AF1732 /* WebzKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebzKit.swift */; };
+		289390921E64855E00AF1732 /* WebzKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebzKit.swift */; };
+		289390931E64855E00AF1732 /* WebzKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebzKit.swift */; };
+		289390941E64855F00AF1732 /* WebzKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289390901E6476BE00AF1732 /* WebzKit.swift */; };
+		28CA0EC51E65094500B6EA3F /* WebzKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA0EC41E65094500B6EA3F /* WebzKitTests.swift */; };
+		28CA0EC71E65094500B6EA3F /* WebzKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C5E29D1E643B2400ADE6AE /* WebzKit.framework */; };
 		28CA0ECE1E650D4D00B6EA3F /* Info-Tests-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28CA0ECD1E650D4D00B6EA3F /* Info-Tests-macOS.plist */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 			containerPortal = 28C5E2911E6438ED00ADE6AE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28C5E29C1E643B2400ADE6AE;
-			remoteInfo = "WebhoseKit macOS";
+			remoteInfo = "WebzKit macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -31,14 +31,14 @@
 		2893908C1E6476BE00AF1732 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		2893908D1E6476BE00AF1732 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = "<group>"; };
 		2893908E1E6476BE00AF1732 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Sources/Info-watchOS.plist"; sourceTree = "<group>"; };
-		2893908F1E6476BE00AF1732 /* WebhoseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WebhoseKit.h; path = Sources/WebhoseKit.h; sourceTree = "<group>"; };
-		289390901E6476BE00AF1732 /* WebhoseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebhoseKit.swift; path = Sources/WebhoseKit.swift; sourceTree = "<group>"; };
-		28C5E29D1E643B2400ADE6AE /* WebhoseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebhoseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C5E2AB1E643B4C00ADE6AE /* WebhoseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebhoseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C5E2B81E643B7000ADE6AE /* WebhoseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebhoseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28C5E2C51E643B9200ADE6AE /* WebhoseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebhoseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CA0EC21E65094500B6EA3F /* WebhoseKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebhoseKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CA0EC41E65094500B6EA3F /* WebhoseKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebhoseKitTests.swift; sourceTree = "<group>"; };
+		2893908F1E6476BE00AF1732 /* WebzKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WebzKit.h; path = Sources/WebzKit.h; sourceTree = "<group>"; };
+		289390901E6476BE00AF1732 /* WebzKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebzKit.swift; path = Sources/WebzKit.swift; sourceTree = "<group>"; };
+		28C5E29D1E643B2400ADE6AE /* WebzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C5E2AB1E643B4C00ADE6AE /* WebzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C5E2B81E643B7000ADE6AE /* WebzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C5E2C51E643B9200ADE6AE /* WebzKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebzKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CA0EC21E65094500B6EA3F /* WebzKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebzKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CA0EC41E65094500B6EA3F /* WebzKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebzKitTests.swift; sourceTree = "<group>"; };
 		28CA0ECD1E650D4D00B6EA3F /* Info-Tests-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-Tests-macOS.plist"; path = "Sources/Info-Tests-macOS.plist"; sourceTree = "<group>"; };
 		28CA0ECF1E65263900B6EA3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CA0EC71E65094500B6EA3F /* WebhoseKit.framework in Frameworks */,
+				28CA0EC71E65094500B6EA3F /* WebzKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +99,8 @@
 				2893908D1E6476BE00AF1732 /* Info-tvOS.plist */,
 				2893908E1E6476BE00AF1732 /* Info-watchOS.plist */,
 				28CA0ECD1E650D4D00B6EA3F /* Info-Tests-macOS.plist */,
-				2893908F1E6476BE00AF1732 /* WebhoseKit.h */,
-				289390901E6476BE00AF1732 /* WebhoseKit.swift */,
+				2893908F1E6476BE00AF1732 /* WebzKit.h */,
+				289390901E6476BE00AF1732 /* WebzKit.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -118,11 +118,11 @@
 		28C5E29E1E643B2400ADE6AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28C5E29D1E643B2400ADE6AE /* WebhoseKit.framework */,
-				28C5E2AB1E643B4C00ADE6AE /* WebhoseKit.framework */,
-				28C5E2B81E643B7000ADE6AE /* WebhoseKit.framework */,
-				28C5E2C51E643B9200ADE6AE /* WebhoseKit.framework */,
-				28CA0EC21E65094500B6EA3F /* WebhoseKitTests.xctest */,
+				28C5E29D1E643B2400ADE6AE /* WebzKit.framework */,
+				28C5E2AB1E643B4C00ADE6AE /* WebzKit.framework */,
+				28C5E2B81E643B7000ADE6AE /* WebzKit.framework */,
+				28C5E2C51E643B9200ADE6AE /* WebzKit.framework */,
+				28CA0EC21E65094500B6EA3F /* WebzKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,10 +130,10 @@
 		28CA0EC31E65094500B6EA3F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				28CA0EC41E65094500B6EA3F /* WebhoseKitTests.swift */,
+				28CA0EC41E65094500B6EA3F /* WebzKitTests.swift */,
 			);
 			name = Tests;
-			path = "WebhoseKitTests-macOS";
+			path = "WebzKitTests-macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +170,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		28C5E29C1E643B2400ADE6AE /* WebhoseKit macOS */ = {
+		28C5E29C1E643B2400ADE6AE /* WebzKit macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28C5E2A31E643B2400ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit macOS" */;
+			buildConfigurationList = 28C5E2A31E643B2400ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit macOS" */;
 			buildPhases = (
 				28C5E2981E643B2400ADE6AE /* Sources */,
 				28C5E2991E643B2400ADE6AE /* Frameworks */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = "WebhoseKit macOS";
-			productName = "webhose.io macOS";
-			productReference = 28C5E29D1E643B2400ADE6AE /* WebhoseKit.framework */;
+			name = "WebzKit macOS";
+			productName = "webz.io macOS";
+			productReference = 28C5E29D1E643B2400ADE6AE /* WebzKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28C5E2AA1E643B4C00ADE6AE /* WebhoseKit iOS */ = {
+		28C5E2AA1E643B4C00ADE6AE /* WebzKit iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28C5E2B01E643B4D00ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit iOS" */;
+			buildConfigurationList = 28C5E2B01E643B4D00ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit iOS" */;
 			buildPhases = (
 				28C5E2A61E643B4C00ADE6AE /* Sources */,
 				28C5E2A71E643B4C00ADE6AE /* Frameworks */,
@@ -201,14 +201,14 @@
 			);
 			dependencies = (
 			);
-			name = "WebhoseKit iOS";
-			productName = "webhose.io iOS";
-			productReference = 28C5E2AB1E643B4C00ADE6AE /* WebhoseKit.framework */;
+			name = "WebzKit iOS";
+			productName = "webz.io iOS";
+			productReference = 28C5E2AB1E643B4C00ADE6AE /* WebzKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28C5E2B71E643B7000ADE6AE /* WebhoseKit tvOS */ = {
+		28C5E2B71E643B7000ADE6AE /* WebzKit tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28C5E2BD1E643B7000ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit tvOS" */;
+			buildConfigurationList = 28C5E2BD1E643B7000ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit tvOS" */;
 			buildPhases = (
 				28C5E2B31E643B7000ADE6AE /* Sources */,
 				28C5E2B41E643B7000ADE6AE /* Frameworks */,
@@ -219,14 +219,14 @@
 			);
 			dependencies = (
 			);
-			name = "WebhoseKit tvOS";
-			productName = "webhose.io tvOS";
-			productReference = 28C5E2B81E643B7000ADE6AE /* WebhoseKit.framework */;
+			name = "WebzKit tvOS";
+			productName = "webz.io tvOS";
+			productReference = 28C5E2B81E643B7000ADE6AE /* WebzKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28C5E2C41E643B9200ADE6AE /* WebhoseKit watchOS */ = {
+		28C5E2C41E643B9200ADE6AE /* WebzKit watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28C5E2CA1E643B9200ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit watchOS" */;
+			buildConfigurationList = 28C5E2CA1E643B9200ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit watchOS" */;
 			buildPhases = (
 				28C5E2C01E643B9200ADE6AE /* Sources */,
 				28C5E2C11E643B9200ADE6AE /* Frameworks */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = "WebhoseKit watchOS";
-			productName = "webhose.io watchOS";
-			productReference = 28C5E2C51E643B9200ADE6AE /* WebhoseKit.framework */;
+			name = "WebzKit watchOS";
+			productName = "webz.io watchOS";
+			productReference = 28C5E2C51E643B9200ADE6AE /* WebzKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28CA0EC11E65094500B6EA3F /* WebhoseKitTests-macOS */ = {
+		28CA0EC11E65094500B6EA3F /* WebzKitTests-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28CA0ECC1E65094500B6EA3F /* Build configuration list for PBXNativeTarget "WebhoseKitTests-macOS" */;
+			buildConfigurationList = 28CA0ECC1E65094500B6EA3F /* Build configuration list for PBXNativeTarget "WebzKitTests-macOS" */;
 			buildPhases = (
 				28CA0EBE1E65094500B6EA3F /* Sources */,
 				28CA0EBF1E65094500B6EA3F /* Frameworks */,
@@ -255,9 +255,9 @@
 			dependencies = (
 				28CA0EC91E65094500B6EA3F /* PBXTargetDependency */,
 			);
-			name = "WebhoseKitTests-macOS";
-			productName = "WebhoseKitTests-macOS";
-			productReference = 28CA0EC21E65094500B6EA3F /* WebhoseKitTests.xctest */;
+			name = "WebzKitTests-macOS";
+			productName = "WebzKitTests-macOS";
+			productReference = 28CA0EC21E65094500B6EA3F /* WebzKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28C5E2941E6438ED00ADE6AE /* Build configuration list for PBXProject "WebhoseKit" */;
+			buildConfigurationList = 28C5E2941E6438ED00ADE6AE /* Build configuration list for PBXProject "WebzKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -307,11 +307,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28C5E29C1E643B2400ADE6AE /* WebhoseKit macOS */,
-				28C5E2AA1E643B4C00ADE6AE /* WebhoseKit iOS */,
-				28C5E2B71E643B7000ADE6AE /* WebhoseKit tvOS */,
-				28C5E2C41E643B9200ADE6AE /* WebhoseKit watchOS */,
-				28CA0EC11E65094500B6EA3F /* WebhoseKitTests-macOS */,
+				28C5E29C1E643B2400ADE6AE /* WebzKit macOS */,
+				28C5E2AA1E643B4C00ADE6AE /* WebzKit iOS */,
+				28C5E2B71E643B7000ADE6AE /* WebzKit tvOS */,
+				28C5E2C41E643B9200ADE6AE /* WebzKit watchOS */,
+				28CA0EC11E65094500B6EA3F /* WebzKitTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289390911E64855D00AF1732 /* WebhoseKit.swift in Sources */,
+				289390911E64855D00AF1732 /* WebzKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289390921E64855E00AF1732 /* WebhoseKit.swift in Sources */,
+				289390921E64855E00AF1732 /* WebzKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289390931E64855E00AF1732 /* WebhoseKit.swift in Sources */,
+				289390931E64855E00AF1732 /* WebzKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289390941E64855F00AF1732 /* WebhoseKit.swift in Sources */,
+				289390941E64855F00AF1732 /* WebzKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CA0EC51E65094500B6EA3F /* WebhoseKitTests.swift in Sources */,
+				28CA0EC51E65094500B6EA3F /* WebzKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +401,7 @@
 /* Begin PBXTargetDependency section */
 		28CA0EC91E65094500B6EA3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28C5E29C1E643B2400ADE6AE /* WebhoseKit macOS */;
+			target = 28C5E29C1E643B2400ADE6AE /* WebzKit macOS */;
 			targetProxy = 28CA0EC81E65094500B6EA3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -472,8 +472,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-macOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-macOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -530,8 +530,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-macOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-macOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -593,8 +593,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-iOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-iOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -651,8 +651,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-iOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-iOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -714,8 +714,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-tvOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-tvOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -771,8 +771,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-tvOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-tvOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -836,8 +836,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-watchOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-watchOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -894,8 +894,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.webhose.webhose-io-watchOS";
-				PRODUCT_NAME = WebhoseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.webz.webz-io-watchOS";
+				PRODUCT_NAME = WebzKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -954,8 +954,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.webhose.WebhoseKitTests;
-				PRODUCT_NAME = WebhoseKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.webz.WebzKitTests;
+				PRODUCT_NAME = WebzKitTests;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1002,8 +1002,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = io.webhose.WebhoseKitTests;
-				PRODUCT_NAME = WebhoseKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.webz.WebzKitTests;
+				PRODUCT_NAME = WebzKitTests;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -1013,7 +1013,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28C5E2941E6438ED00ADE6AE /* Build configuration list for PBXProject "WebhoseKit" */ = {
+		28C5E2941E6438ED00ADE6AE /* Build configuration list for PBXProject "WebzKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28C5E2951E6438ED00ADE6AE /* Debug */,
@@ -1022,7 +1022,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28C5E2A31E643B2400ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit macOS" */ = {
+		28C5E2A31E643B2400ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28C5E2A41E643B2400ADE6AE /* Debug */,
@@ -1031,7 +1031,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28C5E2B01E643B4D00ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit iOS" */ = {
+		28C5E2B01E643B4D00ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28C5E2B11E643B4D00ADE6AE /* Debug */,
@@ -1040,7 +1040,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28C5E2BD1E643B7000ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit tvOS" */ = {
+		28C5E2BD1E643B7000ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28C5E2BE1E643B7000ADE6AE /* Debug */,
@@ -1049,7 +1049,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28C5E2CA1E643B9200ADE6AE /* Build configuration list for PBXNativeTarget "WebhoseKit watchOS" */ = {
+		28C5E2CA1E643B9200ADE6AE /* Build configuration list for PBXNativeTarget "WebzKit watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28C5E2CB1E643B9200ADE6AE /* Debug */,
@@ -1058,7 +1058,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28CA0ECC1E65094500B6EA3F /* Build configuration list for PBXNativeTarget "WebhoseKitTests-macOS" */ = {
+		28CA0ECC1E65094500B6EA3F /* Build configuration list for PBXNativeTarget "WebzKitTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28CA0ECA1E65094500B6EA3F /* Debug */,

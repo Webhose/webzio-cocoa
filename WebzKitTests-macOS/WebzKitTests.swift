@@ -1,12 +1,12 @@
 //
-//  WebhoseKitTests.swift
+//  WebzKitTests.swift
 
-import WebhoseKit
+import WebzKit
 import XCTest
 
 private func standardQuery(completionHandler: @escaping (Error?, [String: Any]?) -> Void) -> Void {
     var query = ["q": "github"]
-    WebhoseKit.query(endpoint: "filterWebData", query: &query, completionHandler: completionHandler)
+    WebzKit.query(endpoint: "filterWebData", query: &query, completionHandler: completionHandler)
 }
 
 private func loadAPIToken() -> String? {
@@ -19,7 +19,7 @@ private func loadAPIToken() -> String? {
 
 private var configured = false
 
-class WebhoseKitTests_macOS: XCTestCase {
+class WebzKitTests_macOS: XCTestCase {
     
     func testExampleCode() {
         standardQuery() { error, json in
@@ -49,7 +49,7 @@ class WebhoseKitTests_macOS: XCTestCase {
         
         let token = loadAPIToken()
         if (token != nil) {
-            WebhoseKit.config(token: token!)
+            WebzKit.config(token: token!)
             configured = true
         }
     }
@@ -70,7 +70,7 @@ class WebhoseKitTests_macOS: XCTestCase {
             var maxResultSets = 3
             var resultsPending = true
         
-            while (resultsPending && maxResultSets > 0 && WebhoseKit.getNext() { error, json in
+            while (resultsPending && maxResultSets > 0 && WebzKit.getNext() { error, json in
                 XCTAssert(error == nil)
                 resultsPending = (json!["posts"] as! [Any]).count > 0
             }) {
